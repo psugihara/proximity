@@ -15,7 +15,9 @@ program.on('--help', function(){
 program.parse(process.argv);
 
 if (program.args.length < 2) {
-    console.log(program.usage());
+    console.log('');
+    console.log('  Usage: proximity ' + program.usage());
+    console.log('');
     process.exit(0);
 }
 

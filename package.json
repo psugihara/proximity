@@ -1,5 +1,5 @@
 {
-  "name": "hook",
+  "name": "proximity",
   "version": "0.0.0",
   "description": "Watch a file or directory and execute a command when it changes.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ptrsghr/hook.git"
+    "url": "https://github.com/ptrsghr/proximity.git"
   },
   "keywords": [
     "supervisor",
@@ -22,6 +22,6 @@
     "commander": "latest"
   },
   "bin": {
-    "hook": "./bin/cli.js"
+    "proximity": "./bin/cli.js"
   }
 }

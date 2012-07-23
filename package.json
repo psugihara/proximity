@@ -1,0 +1,27 @@
+{
+  "name": "hook",
+  "version": "0.0.0",
+  "description": "Watch a file or directory and execute a command when it changes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ptrsghr/hook.git"
+  },
+  "keywords": [
+    "supervisor",
+    "nanny",
+    "build",
+    "watch"
+  ],
+  "author": "Peter Sugihara",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "latest"
+  },
+  "bin": {
+    "hook": "./bin/cli.js"
+  }
+}

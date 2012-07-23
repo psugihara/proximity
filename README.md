@@ -6,7 +6,7 @@ Proximity is a tiny program that executes a command when a file or directory has
 ## Installation
 Proximity requires *node.js* and *npm*. Once you have these dependencies, simply:
 
-	npm install joint -g
+	npm install proximity -g
 	
 ## Usage
 The first argument after `proximity` is the command to run. All following arguments are paths to watch.

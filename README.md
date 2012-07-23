@@ -1,26 +1,22 @@
-	 __    __    ______     ______    __  ___ 
-	|  |  |  |  /  __  \   /  __  \  |  |/  / 
-	|  |__|  | |  |  |  | |  |  |  | |  '  /  
-	|   __   | |  |  |  | |  |  |  | |    <   
-	|  |  |  | |  `--'  | |  `--'  | |  .  \  
-	|__|  |__|  \______/   \______/  |__|\__\ 
-                                          
-Hook is a tiny program that executes a command when a file or directory has changed. I use it to run a build script when I modify the source for a project I'm working on.
+Proximity ![image](http://rhodesmill.org/goldeneye/images/wPrM.gif)
+=========
+                                
+Proximity is a tiny program that executes a command when a file or directory has changed. I use it to run a build script when I modify the source for a project I'm working on.
 
 ## Installation
-Hook requires *node.js* and *npm*. Once you have these dependencies, simply:
+Proximity requires *node.js* and *npm*. Once you have these dependencies, simply:
 
 	npm install joint -g
 	
 ## Usage
-The first argument after `hook` is the command to run. All following arguments are paths to watch.
+The first argument after `proximity` is the command to run. All following arguments are paths to watch.
 
 For example, the following command will run `./build.sh && ps aux | grep node` whenever *server.js* or *static/* are changed.
 
-	hook "./build.sh && ps aux | grep node" server.js static/
+	proximity "./build.sh && ps aux | grep node" server.js static/
 
 ### Note
-Hook should only be used to run commands that will exit at some point because a separate child process is spawned on each change detected.
+Proximity should only be used to run commands that will exit at some point because a separate child process is spawned on each change detected.
 
 ## TODO
 * Catch errors:

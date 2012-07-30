@@ -18,7 +18,9 @@ For example, the following command will run `./build.sh && ps aux | grep node` w
 ### Note
 Proximity should only be used to run commands that will exit at some point because a separate child process is spawned on each change detected.
 
+
 ## TODO
 * Catch errors:
 	* File/directory doesn't exist.
 * Throttle commands so they don't run multiple times when fs.watch() incorrectly reports multiple changes.
+* Check compatability on other systems (only tested on Mac OS X Lion).

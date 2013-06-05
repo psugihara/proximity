@@ -1,6 +1,6 @@
 {
   "name": "proximity",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Watch a file or directory and execute a command when it changes.",
   "main": "index.js",
   "scripts": {

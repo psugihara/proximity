@@ -1,4 +1,4 @@
-Proximity ![image](https://raw.github.com/andyburke/proximity/master/proximity.jpg)
+Proximity <img src="https://raw.github.com/andyburke/proximity/master/proximity.jpg" width="48" height="48" />
 =========
                                 
 Proximity is a tiny program that executes a command when a file is changed somewhere under the current directory. It's useful for performing automatic tasks such as a build when files change.

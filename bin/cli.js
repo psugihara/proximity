@@ -13,8 +13,8 @@ program
         excludes.push( val );
     })
     .option('-t, --timeout', 'Specify a timeout (in milliseconds) for the spawned process. Default: none', 0)
-    .option('-v, --verbose', 'Output verbose information.')
     .option('-q, --quiet', 'Supress command output.')
+    .option('-v, --verbose', 'Output verbose information.')
     .parse(process.argv);
 
 if (program.args.length != 1) {

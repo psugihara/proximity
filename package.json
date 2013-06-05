@@ -17,9 +17,13 @@
     "watch"
   ],
   "author": "Peter Sugihara",
+  "contributors": [
+    "Andy Burke <aburke@bitflood.org> (http://github.com/andyburke)"
+  ],
   "license": "MIT",
   "dependencies": {
-    "commander": "latest"
+    "commander": "latest",
+    "fs-watch-tree": "~0.2.2"
   },
   "bin": {
     "proximity": "./bin/cli.js"

@@ -73,7 +73,7 @@ Trace
     at Object.oncomplete (fs.js:107:15)
 ```
 
-*These are not a problem.* Hopefully fs-watch-tree will be patched to address this in the future.
+*These are not a problem.* fs-watch-tree has accepted a pull request that should resolve this soon: https://github.com/busterjs/fs-watch-tree/pull/5
 
 ## TODO
 * Check compatability on other systems (only tested on Mac OS X Lion).

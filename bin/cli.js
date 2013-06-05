@@ -31,7 +31,7 @@ if ( !!program.ignore )
 }
 
 function log(str) {
-    !!program.verbose && console.log( str );
+    !!program.verbose && console.log( +new Date() + ': ' + str );
 }
 
 log( 'exitonerror: ' + !!program.exitonerror );
@@ -40,20 +40,26 @@ log( 'quiet: ' + !!program.quiet );
 log( '' );
 
 var running = false;
-var lastChange = 0;
+var lastChange = null;
 watchTree('.', {
     exclude: excludes
 }, function( event ) {
     
+    if ( lastChange && lastChange.name == event.name && new Date() - lastChange.date < 100 )
+    {
+        log( '>>CHANGED ' + event.name + ' (skipped: <100ms change delta)' );
+        return;
+    }
+    
     if ( running )
     {
-        log( '  ...command running, skipping change: ' + event.name );
+        log( '>>CHANGED ' + event.name + ' (skipped: command running)' );
         return;
     }
     
     running = true;
 
-    log( 'changed: ' + event.name );
+    log( '>>CHANGED ' + event.name );
     log( '  spawning "' + command + '"' );
     log( '' );
 
@@ -73,7 +79,12 @@ watchTree('.', {
             process.exit( error.code );
         }
 
-        log( '  completed.' );
-        running = false;
+        log( '  command completed.' );
+        
+        setTimeout( function() {
+            running = false;
+            log( '  running flag cleared.' );
+            log( '<<CHANGED COMPLETED' );
+        }, 100 );
     });
 });

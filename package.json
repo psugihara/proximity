@@ -23,7 +23,7 @@
   "license": "MIT",
   "dependencies": {
     "commander": "latest",
-    "fs-watch-tree": "~0.2.2"
+    "fs-watch-tree": "0.2.x"
   },
   "bin": {
     "proximity": "./bin/cli.js"

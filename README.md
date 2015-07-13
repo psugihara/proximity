@@ -1,3 +1,6 @@
+# **This project is deprecated (for now).<br/>Try [chokidar-cli](https://github.com/kimmobrunfeldt/chokidar-cli).**
+
+
 Proximity <img src="https://raw.github.com/andyburke/proximity/master/proximity.jpg" width="48" height="48" />
 =========
                                 
